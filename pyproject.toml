@@ -1,0 +1,17 @@
+[project]
+name = "sps-genai-assignment1"
+version = "1.0.0"
+description = "FastAPI word embeddings and probability exercises"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "fastapi[standard]>=0.115,<1",
+    "spacy>=3.8,<3.9",
+    "en-core-web-lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.8.0/en_core_web_lg-3.8.0-py3-none-any.whl",
+]
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "httpx>=0.27,<1"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
