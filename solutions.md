@@ -24,6 +24,8 @@ Wait for the container health status to become healthy, then open http://127.0.0
 
 Query the endpoint with `curl -X POST http://127.0.0.1:8000/embedding -H 'Content-Type: application/json' -d '{"word":"apple"}'`. View logs with `docker logs sps-genai-assignment1` and stop the server with `docker stop sps-genai-assignment1`. Container validation results and the tested architecture are recorded in evidence/docker_verification.json.
 
+The Docker image was successfully built and tested on linux/arm64. The running container reported healthy, and all eight live HTTP checks passed without any host directory mounts. The 300-dimensional apple embedding exactly matched the locally verified model output. The verification can be repeated with `python tools/verify_container.py` while the container is running. Other architectures have not been tested.
+
 ## Part 2: Rules of Probability
 
 ### Question 1

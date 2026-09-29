@@ -39,7 +39,9 @@ docker logs sps-genai-assignment1
 docker stop sps-genai-assignment1
 ```
 
-`evidence/docker_verification.json` records the actual tested platform and container results. The Dockerfile follows the native architecture selected by Docker; only the platform recorded in that evidence file is claimed as verified.
+The image was built and tested successfully on `linux/arm64`. The container reported `healthy`, and all eight live HTTP checks passed without host directory mounts. The `apple` embedding matched the locally verified vector exactly. `evidence/docker_verification.json` records the image ID and results. The Dockerfile follows the native architecture selected by Docker; other architectures have not been tested.
+
+To repeat these checks while the container is running, use `python tools/verify_container.py` (Python 3, standard library only). This saves fresh verification evidence.
 
 ## Endpoints
 
