@@ -55,9 +55,35 @@ def build(font_dir: Path):
     p("Run and verify", sub)
     for line in ["uv sync --frozen", "uv run fastapi dev app/main.py", "uv run pytest -q", "uv run python probability_solutions.py"]:
         p(line, mono)
-    p("Interactive documentation: http://127.0.0.1:8000/docs. The first installation downloads the model; requests then run locally. Docker deployment is optional and is not used.")
+    p("Interactive documentation: http://127.0.0.1:8000/docs. The first installation downloads the model; requests then run locally. A Docker deployment is included and described on the next page.")
     v = json.loads((ROOT / "evidence/verification.json").read_text())
     p(f"Verification: {v['integration_tests']['passed']} integration tests passed. Eight live HTTP checks confirmed the root route, documentation, OpenAPI schema, embedding output, error responses, and text generation. Vector outputs matched the actual model exactly. Evidence and dependency versions are included in the repository.")
+
+    story.append(PageBreak())
+    p("Part 1: Docker deployment", heading)
+    p("The repository includes Dockerfile, .dockerignore, pyproject.toml, and uv.lock. The image packages Python 3.12, the locked runtime dependencies, the application, and the en_core_web_lg model. The host only needs a running Docker installation; host Python and model files are not required.")
+    p("1. Download the code and build", sub)
+    for line in ["git clone https://github.com/xiangbuchu77/sps-genai-assignment1.git", "cd sps-genai-assignment1", "docker build -t sps-genai-assignment1 ."]:
+        p(line, mono)
+    p("The first build needs internet access for the base image, Python dependencies, and approximately 382 MiB model download. Allow several minutes and adequate disk space.")
+    p("2. Start the container", sub)
+    p("docker run --rm -d --name sps-genai-assignment1 \\", mono)
+    p("  -p 127.0.0.1:8000:80 sps-genai-assignment1", mono)
+    p("docker ps --filter name=sps-genai-assignment1", mono)
+    p("Wait for the health status to become healthy. Open http://127.0.0.1:8000/docs to query the API. The server listens on 0.0.0.0:80 inside the container; Docker maps host port 8000 to container port 80. If port 8000 is occupied, use 127.0.0.1:8001:80 and open port 8001 instead.")
+    p("3. Query the embedding endpoint", sub)
+    for line in ["curl -X POST http://127.0.0.1:8000/embedding \\", "  -H 'Content-Type: application/json' \\", "  -d '{\"word\":\"apple\"}'"]:
+        p(line, mono)
+    p("Expected response: word = apple; model = en_core_web_lg; dimensions = 300; embedding = the full vector. GET / and POST /generate are also available in the container.")
+    p("4. Logs and shutdown", sub)
+    p("docker logs sps-genai-assignment1", mono)
+    p("docker stop sps-genai-assignment1", mono)
+    docker = json.loads((ROOT / "evidence/docker_verification.json").read_text())
+    p("Container verification", sub)
+    if docker['status'] == 'passed':
+        p(f"A Docker image was built successfully and tested on {docker['platform']}. The running container reported healthy. All {len(docker['http_checks'])} live HTTP checks passed, including the full 300-dimensional embedding, validation errors, and text generation. The embedding matched the locally verified vector. The test used no host directory mounts. Reproduction details are recorded in evidence/docker_verification.json.")
+    else:
+        p("Docker build and run instructions are included. Local container execution has not yet been verified: Docker Desktop could not start because its virtual disk was owned by root and was not writable by the current user. This requires a host administrator to correct the file ownership. The Python API tests and local HTTP checks on the preceding page passed; they are not container tests.")
 
     text = (ROOT / "solutions.md").read_text()
     theory = text.split("## Part 2: Rules of Probability\n", 1)[1]
@@ -97,7 +123,7 @@ def build(font_dir: Path):
         i+=1
     p("References", sub)
     p("Assignment1-1.pdf; Module 2 Practice 2: Word Sampling; Module 2 Practice 3: Word Embeddings; Module 3 Activity: First Docker/FastAPI Project Setup and Simple Text Generator.", small)
-    for label,url in [("spaCy vectors and similarity","https://spacy.io/usage/linguistic-features#vectors-similarity"),("FastAPI testing","https://fastapi.tiangolo.com/tutorial/testing/")]:
+    for label,url in [("spaCy vectors and similarity","https://spacy.io/usage/linguistic-features#vectors-similarity"),("FastAPI testing","https://fastapi.tiangolo.com/tutorial/testing/"),("uv Docker integration","https://docs.astral.sh/uv/guides/integration/docker/")]:
         story.append(Paragraph(f'<link href="{url}" color="#176CA4">{label}</link>',small))
 
     def footer(canvas, doc):

@@ -8,7 +8,21 @@ The application preserves the Module 3 `GET /` and `POST /generate` routes and a
 
 The implementation uses the same `en_core_web_lg` model and `nlp(input_word).vector` operation as the Module 2 word-embedding notebook. The model is loaded once at startup. Its NumPy vector is converted to a list so that FastAPI can serialize the response as JSON. Input is restricted to one alphabetic token. Invalid input returns HTTP 422; a word without a stored vector returns HTTP 404.
 
-To install and run, execute `uv sync --frozen` followed by `uv run fastapi dev app/main.py`. Interactive documentation is available at http://127.0.0.1:8000/docs. Run `uv run pytest -q` for integration checks and `uv run python probability_solutions.py` to reproduce the calculations below. Docker deployment is optional and is not used.
+To install and run locally, execute `uv sync --frozen` followed by `uv run fastapi dev app/main.py`. Interactive documentation is available at http://127.0.0.1:8000/docs. Run `uv run pytest -q` for integration checks and `uv run python probability_solutions.py` to reproduce the calculations below.
+
+### Docker deployment
+
+The repository includes a Dockerfile, a restricted .dockerignore, and locked dependency versions. With Docker running, execute these commands from the repository root:
+
+```bash
+docker build -t sps-genai-assignment1 .
+docker run --rm -d --name sps-genai-assignment1 -p 127.0.0.1:8000:80 sps-genai-assignment1
+docker ps --filter name=sps-genai-assignment1
+```
+
+Wait for the container health status to become healthy, then open http://127.0.0.1:8000/docs. The server listens on port 80 inside the container, mapped to port 8000 on the host. The image contains Python 3.12, all runtime dependencies, and en_core_web_lg; no host Python installation or mounted model files are needed. The first build requires internet access to download the dependencies and model.
+
+Query the endpoint with `curl -X POST http://127.0.0.1:8000/embedding -H 'Content-Type: application/json' -d '{"word":"apple"}'`. View logs with `docker logs sps-genai-assignment1` and stop the server with `docker stop sps-genai-assignment1`. Container validation results and the tested architecture are recorded in evidence/docker_verification.json.
 
 ## Part 2: Rules of Probability
 

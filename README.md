@@ -13,9 +13,33 @@ uv sync --frozen
 uv run fastapi dev app/main.py
 ```
 
-`uv` uses Python 3.12 and installs the pinned dependencies from `uv.lock`, including `en_core_web_lg` 3.8.0. The model download is approximately 382 MiB. Internet access is needed during installation; inference runs locally. Docker is optional in the assignment and is not required here.
+`uv` uses Python 3.12 and installs the pinned dependencies from `uv.lock`, including `en_core_web_lg` 3.8.0. The model download is approximately 382 MiB. Internet access is needed during installation; inference runs locally.
 
 Open http://127.0.0.1:8000/docs for interactive API documentation.
+
+## Docker deployment
+
+Install and start Docker Desktop (or Docker Engine on Linux). From the repository root, run:
+
+```bash
+docker build -t sps-genai-assignment1 .
+docker run --rm -d --name sps-genai-assignment1 -p 127.0.0.1:8000:80 sps-genai-assignment1
+docker ps --filter name=sps-genai-assignment1
+```
+
+Wait until the container reports `healthy`, then open http://127.0.0.1:8000/docs. The host port is 8000 and the container port is 80. If port 8000 is occupied, change the mapping to `127.0.0.1:8001:80` and use port 8001 in the URLs.
+
+The image installs the locked runtime dependencies and the full spaCy model during the build. No host Python installation, local virtual environment, model directory, or bind mount is needed. The application listens on `0.0.0.0` inside the container. The Docker build context includes only the application and dependency files. Allow several minutes and sufficient disk space for the first model download and build.
+
+```bash
+curl -X POST http://127.0.0.1:8000/embedding \
+  -H 'Content-Type: application/json' \
+  -d '{"word":"apple"}'
+docker logs sps-genai-assignment1
+docker stop sps-genai-assignment1
+```
+
+`evidence/docker_verification.json` records the actual tested platform and container results. The Dockerfile follows the native architecture selected by Docker; only the platform recorded in that evidence file is claimed as verified.
 
 ## Endpoints
 
@@ -67,6 +91,7 @@ Tests use the actual installed spaCy model and cover exact agreement with its ve
 - `output/pdf/Assignment1_Submission.pdf`: combined implementation report and worked solutions.
 - `tests/test_api.py`: integration tests.
 - `uv.lock`: resolved dependency versions for reproducible installation.
+- `Dockerfile` and `.dockerignore`: container build, runtime command, and health check.
 
 ## Course and technical references
 
@@ -76,5 +101,6 @@ Tests use the actual installed spaCy model and cover exact agreement with its ve
 - [Module 3 classroom FastAPI activity](https://gurgentus.github.io/applied_genai_notebooks/Module%203/gentext_project/).
 - [spaCy: vectors and similarity](https://spacy.io/usage/linguistic-features#vectors-similarity).
 - [FastAPI: testing](https://fastapi.tiangolo.com/tutorial/testing/).
+- [uv: Docker integration](https://docs.astral.sh/uv/guides/integration/docker/).
 
 Course files are referenced by title and are not redistributed in this repository.

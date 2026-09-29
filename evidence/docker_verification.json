@@ -1,0 +1,7 @@
+{
+  "status": "blocked",
+  "attempted_on": "2026-09-29",
+  "reason": "Docker Desktop could not start because its virtual disk was root-owned and not writable by the current user. Correcting ownership requires administrator authentication.",
+  "build_verified": false,
+  "container_http_verified": false
+}
