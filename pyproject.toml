@@ -1,10 +1,28 @@
 [project]
 name = "sps-genai-assignment1"
 version = "1.0.0"
-description = "FastAPI word embeddings and probability exercises"
+description = "Course FastAPI: text generation, word embeddings, and CIFAR-10 CNN"
 requires-python = ">=3.12,<3.13"
 dependencies = [
     "fastapi[standard]>=0.115,<1",
     "spacy>=3.8,<3.9",
     "en-core-web-lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.8.0/en_core_web_lg-3.8.0-py3-none-any.whl",
+    "torch==2.14.0",
+    "torchvision==0.29.0",
+    "pillow>=12,<13",
+    "python-multipart>=0.0.20,<1",
+]
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux'" }]
+torchvision = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[dependency-groups]
+dev = [
+    "pytest>=8,<10",
 ]

@@ -6,3 +6,5 @@ __pycache__/
 tmp/
 *.zip
 .env
+data/
+models/split_indices.json

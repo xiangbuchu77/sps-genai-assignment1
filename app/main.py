@@ -1,13 +1,14 @@
-"""Module 3 FastAPI application with a spaCy word embedding endpoint."""
+"""Course FastAPI application: text generation, embeddings, and CIFAR-10 CNN."""
 
 from contextlib import asynccontextmanager
 from typing import Annotated
 
-from fastapi import FastAPI, HTTPException, Request
+from fastapi import FastAPI, File, HTTPException, Request, UploadFile
 from pydantic import BaseModel, Field, StringConstraints
 import spacy
 
 from app.bigram_model import BigramModel
+from app.classifier import ImageClassifier, InvalidImage
 
 MODEL_NAME = "en_core_web_lg"
 Word = Annotated[str, StringConstraints(strip_whitespace=True, min_length=1, max_length=100)]
@@ -20,11 +21,13 @@ async def lifespan(app: FastAPI):
         MODEL_NAME,
         exclude=["tok2vec", "tagger", "parser", "attribute_ruler", "lemmatizer", "ner"],
     )
+    app.state.classifier = ImageClassifier()
     yield
     del app.state.nlp
+    del app.state.classifier
 
 
-app = FastAPI(title="Assignment 1: Text Generation and Word Embeddings", lifespan=lifespan)
+app = FastAPI(title="Applied Generative AI: Text and Image API", lifespan=lifespan)
 
 corpus = [
     "The Count of Monte Cristo is a novel written by Alexandre Dumas. "
@@ -50,6 +53,13 @@ class EmbeddingResponse(BaseModel):
     model: str
     dimensions: int
     embedding: list[float]
+
+
+class ImageClassificationResponse(BaseModel):
+    class_id: int
+    class_name: str
+    confidence: float
+    probabilities: dict[str, float]
 
 
 @app.get("/")
@@ -78,3 +88,17 @@ def calculate_embedding(payload: EmbeddingRequest, request: Request):
         dimensions=len(word.vector),
         embedding=word.vector.tolist(),
     )
+
+
+@app.post("/classify", response_model=ImageClassificationResponse)
+def classify_image(request: Request, file: UploadFile = File(...)):
+    """Upload an image to predict one of the ten CIFAR-10 classes."""
+    content = file.file.read(5 * 1024 * 1024 + 1)
+    if len(content) > 5 * 1024 * 1024:
+        raise HTTPException(status_code=413, detail="Image must be at most 5 MiB.")
+    if not content:
+        raise HTTPException(status_code=422, detail="Image file is empty.")
+    try:
+        return request.app.state.classifier.predict(content)
+    except InvalidImage as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc

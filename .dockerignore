@@ -4,3 +4,5 @@
 !uv.lock
 !app/
 !app/**
+!models/
+!models/cifar10_cnn.pt
