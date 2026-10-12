@@ -1,6 +1,8 @@
 # Assignment 2: Convolutional Neural Networks
 
-Jiajun Shen | js6890 | APAN PS5560
+Jiajun Shen | js6890
+
+GitHub: https://github.com/xiangbuchu77/sps-genai-assignment1/tree/codex/assignment2-cnn
 
 - [Written answers and results](Assignment2_Submission.pdf)
 - [CNN architecture](app/cnn.py) and [training](train_cnn.py)
