@@ -1,0 +1,139 @@
+{
+  "status": "passed",
+  "container": "sps-genai-assignment3",
+  "image_id": "sha256:cda6e42ed67f6695c5725caf7ef1f40b7c38c6ad0e56fdf2280bc579aa17574b",
+  "health": "healthy",
+  "host_mounts": [],
+  "http_checks": [
+    {
+      "method": "GET",
+      "path": "/",
+      "payload": null,
+      "expected_status": 200,
+      "actual_status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/docs",
+      "payload": null,
+      "expected_status": 200,
+      "actual_status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/openapi.json",
+      "payload": null,
+      "expected_status": 200,
+      "actual_status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/generate",
+      "payload": {
+        "start_word": "the",
+        "length": 8
+      },
+      "expected_status": 200,
+      "actual_status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/embedding",
+      "payload": {
+        "word": "apple"
+      },
+      "expected_status": 200,
+      "actual_status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/generate-image",
+      "payload": {
+        "num_samples": 16,
+        "seed": 42
+      },
+      "expected_status": 200,
+      "actual_status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/generate-image",
+      "payload": {
+        "num_samples": 16,
+        "seed": 42
+      },
+      "expected_status": 200,
+      "actual_status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/generate-image",
+      "payload": {
+        "num_samples": 1,
+        "seed": 1
+      },
+      "expected_status": 200,
+      "actual_status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/generate-image",
+      "payload": {
+        "num_samples": 0
+      },
+      "expected_status": 422,
+      "actual_status": 422
+    },
+    {
+      "method": "POST",
+      "path": "/generate-image",
+      "payload": {
+        "num_samples": 65
+      },
+      "expected_status": 422,
+      "actual_status": 422
+    },
+    {
+      "method": "POST",
+      "path": "/generate-image",
+      "payload": {
+        "seed": -1
+      },
+      "expected_status": 422,
+      "actual_status": 422
+    },
+    {
+      "method": "POST",
+      "path": "/generate-image",
+      "payload": {
+        "seed": 4294967296
+      },
+      "expected_status": 422,
+      "actual_status": 422
+    },
+    {
+      "method": "POST",
+      "path": "/generate-image",
+      "payload": {
+        "num_samples": true
+      },
+      "expected_status": 422,
+      "actual_status": 422
+    },
+    {
+      "method": "POST",
+      "path": "/classify",
+      "expected_status": 200,
+      "actual_status": 200
+    }
+  ],
+  "png_shape": [
+    122,
+    122
+  ],
+  "png_mode": "L",
+  "png_sha256": "028f9361d93c6ebe46003f037f92bc14acecbb2799ee001aff94638c816cff56",
+  "same_seed_reproducible": true,
+  "png_matches_container_inference": true,
+  "checkpoint_sha256": "45105dbb78f22d56cc10701830259507f56e6a1e030f635eb14fed9c6d8640bf"
+}

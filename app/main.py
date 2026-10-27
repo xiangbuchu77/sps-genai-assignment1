@@ -1,14 +1,15 @@
-"""Course FastAPI application: text generation, embeddings, and CIFAR-10 CNN."""
+"""Course FastAPI: text, embeddings, CIFAR-10 classification and MNIST generation."""
 
 from contextlib import asynccontextmanager
 from typing import Annotated
 
-from fastapi import FastAPI, File, HTTPException, Request, UploadFile
+from fastapi import FastAPI, File, HTTPException, Request, Response, UploadFile
 from pydantic import BaseModel, Field, StringConstraints
 import spacy
 
 from app.bigram_model import BigramModel
 from app.classifier import ImageClassifier, InvalidImage
+from app.digit_generator import DigitGenerator
 
 MODEL_NAME = "en_core_web_lg"
 Word = Annotated[str, StringConstraints(strip_whitespace=True, min_length=1, max_length=100)]
@@ -22,9 +23,11 @@ async def lifespan(app: FastAPI):
         exclude=["tok2vec", "tagger", "parser", "attribute_ruler", "lemmatizer", "ner"],
     )
     app.state.classifier = ImageClassifier()
+    app.state.digit_generator = DigitGenerator()
     yield
     del app.state.nlp
     del app.state.classifier
+    del app.state.digit_generator
 
 
 app = FastAPI(title="Applied Generative AI: Text and Image API", lifespan=lifespan)
@@ -60,6 +63,11 @@ class ImageClassificationResponse(BaseModel):
     class_name: str
     confidence: float
     probabilities: dict[str, float]
+
+
+class ImageGenerationRequest(BaseModel):
+    num_samples: int = Field(default=16, ge=1, le=64, strict=True)
+    seed: int = Field(default=42, ge=0, le=2**32 - 1, strict=True)
 
 
 @app.get("/")
@@ -102,3 +110,17 @@ def classify_image(request: Request, file: UploadFile = File(...)):
         return request.app.state.classifier.predict(content)
     except InvalidImage as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
+@app.post("/generate-image", response_class=Response,
+          responses={200: {"content": {"image/png": {}}, "description": "Generated MNIST digit grid"}})
+def generate_image(payload: ImageGenerationRequest, request: Request):
+    """Generate 1-64 unconditional 28x28 digit images as a grayscale PNG grid.
+
+    A seed reproduces the same initial noise. No digit label is supplied or
+    controlled; the model learned all ten classes without labels.
+    """
+    service = request.app.state.digit_generator
+    return Response(content=service.png(payload.num_samples, payload.seed), media_type="image/png",
+                    headers={"X-Num-Samples": str(payload.num_samples),
+                             "X-Seed": str(payload.seed), "X-Model-Epoch": str(service.epoch)})

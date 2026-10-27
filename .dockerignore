@@ -6,3 +6,4 @@
 !app/**
 !models/
 !models/cifar10_cnn.pt
+!models/mnist_gan.pt

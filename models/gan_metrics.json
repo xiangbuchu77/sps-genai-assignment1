@@ -1,0 +1,42 @@
+{
+  "dataset": "MNIST",
+  "split": "official training split",
+  "train_count": 60000,
+  "epochs": 30,
+  "batch_size": 128,
+  "seed": 42,
+  "device": "mps",
+  "python": "3.12.13",
+  "torch": "2.14.0",
+  "torchvision": "0.29.0",
+  "latent_dim": 100,
+  "image_shape": [
+    1,
+    28,
+    28
+  ],
+  "generator_parameters": 765761,
+  "discriminator_parameters": 138817,
+  "optimizer": "Adam",
+  "learning_rate": 0.0002,
+  "betas": [
+    0.5,
+    0.999
+  ],
+  "loss": "BCEWithLogitsLoss; non-saturating generator objective",
+  "updates_per_network": 14070,
+  "preview_seed": 1234,
+  "preview_count": 64,
+  "elapsed_seconds": 316.9602082921192,
+  "final_epoch": {
+    "epoch": 30,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.28988001737594604,
+    "generator_loss": 3.3690047168095907,
+    "real_probability": 0.8948102037668229,
+    "fake_probability": 0.10510148098804056,
+    "seconds": 10.605859084054828
+  },
+  "checkpoint_sha256": "45105dbb78f22d56cc10701830259507f56e6a1e030f635eb14fed9c6d8640bf"
+}

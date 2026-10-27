@@ -1,0 +1,302 @@
+[
+  {
+    "epoch": 1,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.5172983019034068,
+    "generator_loss": 2.460292805335919,
+    "real_probability": 0.8221405674775442,
+    "fake_probability": 0.18685058365060636,
+    "seconds": 12.181956416927278
+  },
+  {
+    "epoch": 2,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.507355007425944,
+    "generator_loss": 1.9877242293039958,
+    "real_probability": 0.800776921749115,
+    "fake_probability": 0.1995389781753222,
+    "seconds": 10.310086417011917
+  },
+  {
+    "epoch": 3,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.5205093859513601,
+    "generator_loss": 2.0521563720703124,
+    "real_probability": 0.8035512015660604,
+    "fake_probability": 0.19607190653880438,
+    "seconds": 10.298504707869142
+  },
+  {
+    "epoch": 4,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.603026683584849,
+    "generator_loss": 1.9315130005200705,
+    "real_probability": 0.779119168361028,
+    "fake_probability": 0.22055279933114846,
+    "seconds": 10.276709833182395
+  },
+  {
+    "epoch": 5,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.6280556224187215,
+    "generator_loss": 1.8945773564656576,
+    "real_probability": 0.7717362440745036,
+    "fake_probability": 0.228011827425162,
+    "seconds": 10.496376334223896
+  },
+  {
+    "epoch": 6,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.6302365317980448,
+    "generator_loss": 1.9106456991593044,
+    "real_probability": 0.7720706150372824,
+    "fake_probability": 0.2285427550594012,
+    "seconds": 10.24517308268696
+  },
+  {
+    "epoch": 7,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.5560951152801513,
+    "generator_loss": 2.0545290591875713,
+    "real_probability": 0.7945112745126088,
+    "fake_probability": 0.20607188468972842,
+    "seconds": 10.277380665764213
+  },
+  {
+    "epoch": 8,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.5696418930848439,
+    "generator_loss": 2.0841117524782815,
+    "real_probability": 0.7950273765405019,
+    "fake_probability": 0.20514597556988398,
+    "seconds": 10.241291333921254
+  },
+  {
+    "epoch": 9,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.4929765018781026,
+    "generator_loss": 2.300198240598043,
+    "real_probability": 0.8206735102971395,
+    "fake_probability": 0.1792514492690563,
+    "seconds": 10.27124016592279
+  },
+  {
+    "epoch": 10,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.47777062377929685,
+    "generator_loss": 2.3627174131870268,
+    "real_probability": 0.8278231778780619,
+    "fake_probability": 0.17224821661512058,
+    "seconds": 10.303837208077312
+  },
+  {
+    "epoch": 11,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.5136091895898183,
+    "generator_loss": 2.350999250984192,
+    "real_probability": 0.8173920554796855,
+    "fake_probability": 0.18334292671084404,
+    "seconds": 10.300703583285213
+  },
+  {
+    "epoch": 12,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.4838527811686198,
+    "generator_loss": 2.4516888847072917,
+    "real_probability": 0.830522673415641,
+    "fake_probability": 0.16914876402251733,
+    "seconds": 10.255903834011406
+  },
+  {
+    "epoch": 13,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.4480426841100057,
+    "generator_loss": 2.4757430283228556,
+    "real_probability": 0.8370712705612182,
+    "fake_probability": 0.16369479668165246,
+    "seconds": 10.282217750325799
+  },
+  {
+    "epoch": 14,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.44628733288447064,
+    "generator_loss": 2.587258082739512,
+    "real_probability": 0.8400471642017364,
+    "fake_probability": 0.15964454660018285,
+    "seconds": 10.29947470780462
+  },
+  {
+    "epoch": 15,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.44493883701960246,
+    "generator_loss": 2.6156275928497315,
+    "real_probability": 0.8419240392367046,
+    "fake_probability": 0.15799670435289542,
+    "seconds": 10.262438875157386
+  },
+  {
+    "epoch": 16,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.41924191757043205,
+    "generator_loss": 2.6800274980545042,
+    "real_probability": 0.8498984408378601,
+    "fake_probability": 0.15035791027545928,
+    "seconds": 10.228437250014395
+  },
+  {
+    "epoch": 17,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.45655993615786233,
+    "generator_loss": 2.652982170232137,
+    "real_probability": 0.84006835881869,
+    "fake_probability": 0.15963126317864904,
+    "seconds": 10.257883791811764
+  },
+  {
+    "epoch": 18,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.3998600783427556,
+    "generator_loss": 2.7198055835088093,
+    "real_probability": 0.8572646066188813,
+    "fake_probability": 0.14283494146981587,
+    "seconds": 10.264200292062014
+  },
+  {
+    "epoch": 19,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.41785213146209715,
+    "generator_loss": 2.8081114148457846,
+    "real_probability": 0.8547643464326858,
+    "fake_probability": 0.14536958621554077,
+    "seconds": 11.326930624898523
+  },
+  {
+    "epoch": 20,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.3534154411156972,
+    "generator_loss": 2.898260087521871,
+    "real_probability": 0.8701651741981506,
+    "fake_probability": 0.1300432606294751,
+    "seconds": 10.938214791938663
+  },
+  {
+    "epoch": 21,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.431827495098114,
+    "generator_loss": 2.8494285505930583,
+    "real_probability": 0.853189571762085,
+    "fake_probability": 0.1462825650115808,
+    "seconds": 10.860065249726176
+  },
+  {
+    "epoch": 22,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.3837584659735362,
+    "generator_loss": 2.8874673162142437,
+    "real_probability": 0.8634651718775431,
+    "fake_probability": 0.13647653499344986,
+    "seconds": 10.758722041733563
+  },
+  {
+    "epoch": 23,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.3539690852801005,
+    "generator_loss": 2.997428976504008,
+    "real_probability": 0.8737275629679362,
+    "fake_probability": 0.12637021556471784,
+    "seconds": 10.898667166009545
+  },
+  {
+    "epoch": 24,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.35631930481592816,
+    "generator_loss": 3.046377552731832,
+    "real_probability": 0.8733995915730794,
+    "fake_probability": 0.12603798461283247,
+    "seconds": 10.678413916844875
+  },
+  {
+    "epoch": 25,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.3816740882873535,
+    "generator_loss": 3.0545208223978677,
+    "real_probability": 0.8688197714805603,
+    "fake_probability": 0.13142323837528627,
+    "seconds": 11.043182624969631
+  },
+  {
+    "epoch": 26,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.34087763566970825,
+    "generator_loss": 3.1419639968236286,
+    "real_probability": 0.8816989348888398,
+    "fake_probability": 0.11803386776441087,
+    "seconds": 10.822715749964118
+  },
+  {
+    "epoch": 27,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.36583180797894793,
+    "generator_loss": 3.0800107978185016,
+    "real_probability": 0.8735251863797505,
+    "fake_probability": 0.12630170309630534,
+    "seconds": 10.62359349988401
+  },
+  {
+    "epoch": 28,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.3264650672276815,
+    "generator_loss": 3.2129827538172404,
+    "real_probability": 0.8850810025850931,
+    "fake_probability": 0.11532582986876369,
+    "seconds": 10.431608457583934
+  },
+  {
+    "epoch": 29,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.2646580730438232,
+    "generator_loss": 3.338049595514933,
+    "real_probability": 0.8982328922271728,
+    "fake_probability": 0.1018259121020635,
+    "seconds": 10.489884125068784
+  },
+  {
+    "epoch": 30,
+    "examples": 60000,
+    "updates_per_network": 469,
+    "discriminator_loss": 0.28988001737594604,
+    "generator_loss": 3.3690047168095907,
+    "real_probability": 0.8948102037668229,
+    "fake_probability": 0.10510148098804056,
+    "seconds": 10.605859084054828
+  }
+]
