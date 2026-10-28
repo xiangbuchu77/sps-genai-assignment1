@@ -2,7 +2,7 @@
 
 Jiajun Shen | js6890
 
-GitHub: [https://github.com/xiangbuchu77/sps-genai-assignment1/tree/codex/assignment3-gan](https://github.com/xiangbuchu77/sps-genai-assignment1/tree/codex/assignment3-gan)
+GitHub: [https://github.com/xiangbuchu77/sps-genai-assignment1/tree/assignment3-gan](https://github.com/xiangbuchu77/sps-genai-assignment1/tree/assignment3-gan)
 
 ## Part 1. GAN architecture
 

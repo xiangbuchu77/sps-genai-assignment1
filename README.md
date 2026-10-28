@@ -2,7 +2,7 @@
 
 Jiajun Shen | js6890
 
-GitHub: https://github.com/xiangbuchu77/sps-genai-assignment1/tree/codex/assignment3-gan
+GitHub: https://github.com/xiangbuchu77/sps-genai-assignment1/tree/assignment3-gan
 
 - [Written answers and results](Assignment3_Submission.pdf)
 - [Editable written answers](Assignment3_Answers.md)
@@ -15,7 +15,7 @@ GitHub: https://github.com/xiangbuchu77/sps-genai-assignment1/tree/codex/assignm
 The trained checkpoint is included. No training or GPU is required for inference.
 
 ```bash
-git clone --branch codex/assignment3-gan --single-branch https://github.com/xiangbuchu77/sps-genai-assignment1.git
+git clone --branch assignment3-gan --single-branch https://github.com/xiangbuchu77/sps-genai-assignment1.git
 cd sps-genai-assignment1
 docker build -t sps-genai-assignment3 .
 docker run --rm -p 127.0.0.1:8000:80 sps-genai-assignment3
