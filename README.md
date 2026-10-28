@@ -2,7 +2,7 @@
 
 Jiajun Shen | js6890
 
-GitHub: https://github.com/xiangbuchu77/sps-genai-assignment1/tree/codex/assignment2-cnn
+GitHub: https://github.com/xiangbuchu77/sps-genai-assignment1/tree/assignment2-cnn
 
 - [Written answers and results](Assignment2_Submission.pdf)
 - [CNN architecture](app/cnn.py) and [training](train_cnn.py)
@@ -12,7 +12,7 @@ GitHub: https://github.com/xiangbuchu77/sps-genai-assignment1/tree/codex/assignm
 ## Run with Docker
 
 ```bash
-git clone --branch codex/assignment2-cnn --single-branch https://github.com/xiangbuchu77/sps-genai-assignment1.git
+git clone --branch assignment2-cnn --single-branch https://github.com/xiangbuchu77/sps-genai-assignment1.git
 cd sps-genai-assignment1
 docker build -t sps-genai-assignment2 .
 docker run --rm -p 127.0.0.1:8000:80 sps-genai-assignment2

@@ -1,150 +1,1474 @@
-%PDF-1.4
-%“Œ‹ž ReportLab Generated PDF document (opensource)
+%PDF-1.3
+%âãÏÓ
 1 0 obj
 <<
-/F1 2 0 R /F2 3 0 R /F3 6 0 R
+/PageMode /UseNone
+/Pages 2 0 R
+/Type /Catalog
 >>
 endobj
 2 0 obj
 <<
-/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+/Count 3
+/Kids [ 3 0 R 10 0 R 13 0 R ]
+/Type /Pages
 >>
 endobj
 3 0 obj
 <<
-/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+/Annots [ 4 0 R ]
+/Contents 5 0 R
+/MediaBox [ 0 0 612 792 ]
+/Parent 2 0 R
+/Resources <<
+/Font 6 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
 >>
 endobj
 4 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://github.com/xiangbuchu77/sps-genai-assignment1/tree/codex/assignment2-cnn)
->> /Border [ 0 0 0 ] /Rect [ 91.4136 699.76 477.4938 712 ] /Subtype /Link /Type /Annot
+/S /URI
+/Type /Action
+/URI (https\072\057\057github\056com\057xiangbuchu77\057sps\055genai\055assignment1\057tree\057assignment2\055cnn)
+>>
+/Border [ 0 0 0 ]
+/Rect [ 91.4136 699.76 477.4938 712 ]
+/Subtype /Link
+/Type /Annot
 >>
 endobj
 5 0 obj
 <<
-/Annots [ 4 0 R ] /Contents 15 0 R /MediaBox [ 0 0 612 792 ] /Parent 14 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 
-  /Trans <<
-
->> /Type /Page
+/Length 6718
 >>
+stream
+1 0 0 1 0 0 cm
+BT
+/F1 12 Tf
+14.4 TL
+ET
+q
+BT
+/F1 8 Tf
+9.6 TL
+ET
+0 0 0 rg
+BT
+1 0 0 1 559.552 30 Tm
+(1) Tj
+T*
+ET
+Q
+q
+1 0 0 1 54 720 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 4 Tm
+/F2 20 Tf
+24 TL
+(Assignment 2\072 Convolutional Neural Networks) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 697.9 cm
+q
+BT
+1 0 0 1 0 3.9 Tm
+14.1 TL
+/F1 10.2 Tf
+0 0 0 rg
+(GitHub\072 ) Tj
+(https\072\057\057github\056com\057xiangbuchu77\057sps\055genai\055assignment1\057tree\057assignment2\055cnn) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 672.9 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3.7 Tm
+/F2 12.3 Tf
+16 TL
+(1\056 CNN architecture) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 637.7 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 18 Tm
+/F1 10.2 Tf
+14.1 TL
+(The model follows the specified architecture\056 PyTorch stores images as channels first\054 so one RGB image has) Tj
+T*
+(shape 3 x 64 x 64\056 Shapes below omit the batch dimension\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 455.7 cm
+q
+0.933333 0.933333 0.933333 rg
+n
+0 175 516 -17.5 re
+f*
+0 0 0 rg
+BT
+/F1 10 Tf
+12 TL
+ET
+q
+1 0 0 1 7 159.5 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(Layer) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 299 159.5 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(Output shape) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 434 159.5 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(Parameters) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 7 142 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(Input) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 299 142 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(3 x 64 x 64) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 434 142 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(0) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 7 124.5 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(Conv2d\0503\054 16\054 3\054 stride\0751\054 padding\0751\051) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 299 124.5 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(16 x 64 x 64) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 434 124.5 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(448) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 7 107 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(ReLU\073 MaxPool2d\0502\054 stride\0752\051) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 299 107 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(16 x 32 x 32) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 434 107 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(0) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 7 89.5 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(Conv2d\05016\054 32\054 3\054 stride\0751\054 padding\0751\051) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 299 89.5 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(32 x 32 x 32) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 434 89.5 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(4\054640) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 7 72 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(ReLU\073 MaxPool2d\0502\054 stride\0752\051) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 299 72 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(32 x 16 x 16) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 434 72 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(0) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 7 54.5 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(Flatten) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 299 54.5 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(8\054192) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 434 54.5 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(0) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 7 37 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(Linear\0508192\054 100\051\073 ReLU) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 299 37 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(100) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 434 37 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(819\054300) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 7 19.5 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(Linear\050100\054 10\051) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 299 19.5 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(10) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 434 19.5 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(1\054010) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 7 2 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(Total) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 299 13.5 cm
+Q
+q
+1 0 0 1 434 2 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(825\054398) Tj
+T*
+ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+0.6 w
+n
+0 157.5 m
+516 157.5 l
+S
+0.5 w
+n
+0 0 m
+516 0 l
+S
+Q
+Q
+Q
+q
+1 0 0 1 54 447.7 cm
+Q
+q
+1 0 0 1 54 419.5 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 18 Tm
+/F1 10.2 Tf
+14.1 TL
+(The last layer returns logits for CrossEntropyLoss\056 Softmax is applied only when the API returns class) Tj
+T*
+(probabilities\056 The implementation is in app\057cnn\056py\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 394.5 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3.7 Tm
+/F2 12.3 Tf
+16 TL
+(2\056 CIFAR\05510 training) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 331.1 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 46.2 Tm
+/F1 10.2 Tf
+14.1 TL
+(The 50\054000 official training images were split into 45\054000 training and 5\054000 validation images using seed 42\056) Tj
+T*
+(The official 10\054000 test images were held out until the best validation checkpoint was selected\056 All images were) Tj
+T*
+(resized from 32 x 32 to 64 x 64 and normalized with mean and standard deviation 0\0565 in each channel\056 Training) Tj
+T*
+(also used random cropping with padding 4 and horizontal flipping\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 295.9 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 18 Tm
+/F1 10.2 Tf
+14.1 TL
+(Training used AdamW\054 an initial learning rate of 0\056001\054 weight decay 0\0560001\054 batch size 256\054 and a cosine) Tj
+T*
+(learning\055rate schedule for 15 epochs on Apple MPS\056 The architecture was not changed\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 201.4 cm
+q
+0.933333 0.933333 0.933333 rg
+n
+0 87.5 516 -17.5 re
+f*
+0 0 0 rg
+BT
+/F1 10 Tf
+12 TL
+ET
+q
+1 0 0 1 7 72 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(Measure) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 317 72 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(Result) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 7 54.5 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(Selected epoch) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 317 54.5 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(15) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 7 37 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(Validation accuracy) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 317 37 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(64\05652\045) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 7 19.5 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(Test accuracy) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 317 19.5 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(65\05618\045 \0506\054518 \057 10\054000\051) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 7 2 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(Test cross\055entropy loss) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 317 2 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3 Tm
+/F1 8.5 Tf
+11.5 TL
+(0\0569886) Tj
+T*
+ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+0.6 w
+n
+0 70 m
+516 70 l
+S
+0.5 w
+n
+0 0 m
+516 0 l
+S
+Q
+Q
+Q
+q
+1 0 0 1 54 193.4 cm
+Q
+q
+1 0 0 1 54 170.4 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 14.5 Tm
+/F1 8.5 Tf
+11.5 TL
+-0.025025 Tw
+(The checkpoint\054 per\055epoch results\054 and test metrics are saved in models\057\056 The model is a small CIFAR\05510 classifier\073 its softmax scores) Tj
+T*
+0 Tw
+(are not calibrated confidence estimates for arbitrary photos\056) Tj
+T*
+ET
+Q
+Q
+
+endstream
 endobj
 6 0 obj
 <<
-/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+/F1 7 0 R
+/F2 8 0 R
+/F3 9 0 R
 >>
 endobj
 7 0 obj
 <<
-/A <<
-/S /URI /Type /Action /URI (http://127.0.0.1:8000/docs)
->> /Border [ 0 0 0 ] /Rect [ 81.7848 560.26 199.6536 572.5 ] /Subtype /Link /Type /Annot
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
 >>
 endobj
 8 0 obj
 <<
-/Annots [ 7 0 R ] /Contents 16 0 R /MediaBox [ 0 0 612 792 ] /Parent 14 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 
-  /Trans <<
-
->> /Type /Page
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
 >>
 endobj
 9 0 obj
 <<
-/A <<
-/S /URI /Type /Action /URI (https://docs.pytorch.org/docs/2.14/generated/torch.nn.Module.html)
->> /Border [ 0 0 0 ] /Rect [ 102.1865 95.9 218.39 106.1 ] /Subtype /Link /Type /Annot
+/BaseFont /Courier
+/Encoding /WinAnsiEncoding
+/Name /F3
+/Subtype /Type1
+/Type /Font
 >>
 endobj
 10 0 obj
 <<
-/A <<
-/S /URI /Type /Action /URI (https://docs.pytorch.org/vision/stable/generated/torchvision.datasets.CIFAR10.html)
->> /Border [ 0 0 0 ] /Rect [ 223.116 95.9 303.883 106.1 ] /Subtype /Link /Type /Annot
+/Annots [ 11 0 R ]
+/Contents 12 0 R
+/MediaBox [ 0 0 612 792 ]
+/Parent 2 0 R
+/Resources <<
+/Font 6 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
 >>
 endobj
 11 0 obj
 <<
-/Annots [ 9 0 R 10 0 R ] /Contents 17 0 R /MediaBox [ 0 0 612 792 ] /Parent 14 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 
-  /Trans <<
-
->> /Type /Page
+/A <<
+/S /URI
+/Type /Action
+/URI (http\072\057\057127\0560\0560\0561\0728000\057docs)
+>>
+/Border [ 0 0 0 ]
+/Rect [ 81.7848 560.26 199.6536 572.5 ]
+/Subtype /Link
+/Type /Annot
 >>
 endobj
 12 0 obj
 <<
-/PageMode /UseNone /Pages 14 0 R /Type /Catalog
+/Length 4020
 >>
+stream
+1 0 0 1 0 0 cm
+BT
+/F1 12 Tf
+14.4 TL
+ET
+q
+BT
+/F1 8 Tf
+9.6 TL
+ET
+0 0 0 rg
+BT
+1 0 0 1 559.552 30 Tm
+(2) Tj
+T*
+ET
+Q
+q
+1 0 0 1 54 728 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3.7 Tm
+/F2 12.3 Tf
+16 TL
+(3\056 API and Docker deployment) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 664.6 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 46.2 Tm
+/F1 10.2 Tf
+14.1 TL
+(The new POST \057classify endpoint accepts an uploaded image and returns a class ID\054 class name\054 softmax) Tj
+T*
+(score\054 and all ten class probabilities\056 The existing \057\054 \057generate\054 and \057embedding endpoints are preserved\056 The) Tj
+T*
+(saved checkpoint is included in the Docker image and loaded once at startup\073 prediction runs on CPU in) Tj
+T*
+(evaluation mode with gradient tracking disabled\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 643.5 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3.9 Tm
+/F1 10.2 Tf
+14.1 TL
+(From a terminal\072) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 580.5 cm
+0 0 0 rg
+BT
+1 0 0 1 0 47.9 Tm
+/F3 8.1 Tf
+11.2 TL
+(git clone \055\055branch assignment2\055cnn \055\055single\055branch \134) Tj
+T*
+(  https\072\057\057github\056com\057xiangbuchu77\057sps\055genai\055assignment1\056git) Tj
+T*
+(cd sps\055genai\055assignment1) Tj
+T*
+(docker build \055t sps\055genai\055assignment2 \056) Tj
+T*
+(docker run \055\055rm \055p 127\0560\0560\0561\0728000\07280 sps\055genai\055assignment2) Tj
+T*
+ET
+Q
+q
+1 0 0 1 54 530.2 cm
+q
+BT
+1 0 0 1 0 32.1 Tm
+-0.083957 Tw
+14.1 TL
+/F1 10.2 Tf
+0 0 0 rg
+(Open ) Tj
+(http\072\057\057127\0560\0560\0561\0728000\057docs) Tj
+(\054 expand POST \057classify\054 select Try it out\054 upload an image\054 and select Execute\056) Tj
+T*
+0 Tw
+(The first build requires Internet access to install dependencies\054 including the existing spaCy model\056 A GPU and) Tj
+T*
+(retraining are not required to serve predictions\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 509.1 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3.9 Tm
+/F1 10.2 Tf
+14.1 TL
+(A sample request from a second terminal\072) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 479.7 cm
+0 0 0 rg
+BT
+1 0 0 1 0 14.3 Tm
+/F3 8.1 Tf
+11.2 TL
+(curl \055X POST http\072\057\057127\0560\0560\0561\0728000\057classify \134) Tj
+T*
+(  \055F \042file\075\100examples\057cifar10\137test\1370000\056png\042) Tj
+T*
+ET
+Q
+q
+1 0 0 1 54 457.6 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3.9 Tm
+/F1 10.2 Tf
+14.1 TL
+(Observed response from the Docker container \050probabilities abbreviated\051\072) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 394.6 cm
+0 0 0 rg
+BT
+1 0 0 1 0 47.9 Tm
+/F3 8.1 Tf
+11.2 TL
+(\173) Tj
+T*
+(  \042class\137id\042\072 3\054) Tj
+T*
+(  \042class\137name\042\072 \042cat\042\054) Tj
+T*
+(  \042confidence\042\072 0\0565339770913124084) Tj
+T*
+(\175) Tj
+T*
+ET
+Q
+q
+1 0 0 1 54 358.4 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 18 Tm
+/F1 10.2 Tf
+14.1 TL
+(The example is official CIFAR\05510 test image 0\054 whose true class is cat\056 The predicted class was cat\056 The) Tj
+T*
+(example index was fixed before checking its prediction\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 309.1 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 32.1 Tm
+/F1 10.2 Tf
+14.1 TL
+(The Docker container started successfully and the health check passed\056 HTTP checks covered the new) Tj
+T*
+(classifier\054 the existing text and embedding endpoints\054 and invalid image uploads\056 The endpoint rejects empty or) Tj
+T*
+(unreadable files and files larger than 5 MiB\054 and converts grayscale\057RGBA images to RGB\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 284.1 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3.7 Tm
+/F2 12.3 Tf
+16 TL
+(Reproduce training) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 243.5 cm
+0 0 0 rg
+BT
+1 0 0 1 0 25.5 Tm
+/F3 8.1 Tf
+11.2 TL
+(uv sync \055\055frozen) Tj
+T*
+(uv run python train\137cnn\056py \055\055epochs 15 \055\055batch\055size 256 \055\055seed 42) Tj
+T*
+(uv run uvicorn app\056main\072app \055\055host 127\0560\0560\0561 \055\055port 8000) Tj
+T*
+ET
+Q
+q
+1 0 0 1 54 212.5 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 14.5 Tm
+/F1 8.5 Tf
+11.5 TL
+(Training downloads CIFAR\05510 into data\057\056 It saves the checkpoint with the highest validation accuracy and evaluates it once on the test) Tj
+T*
+(set\056 The default device is CUDA\054 MPS\054 or CPU according to availability\056 Exact results can vary across devices\056) Tj
+T*
+ET
+Q
+Q
+
+endstream
 endobj
 13 0 obj
 <<
-/Author (Jiajun Shen) /CreationDate (D:20261012192526-04'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261012192526-04'00') /Producer (ReportLab PDF Library - \(opensource\)) 
-  /Subject (\(unspecified\)) /Title (Assignment 2: Convolutional Neural Networks) /Trapped /False
+/Annots [ 14 0 R 15 0 R ]
+/Contents 16 0 R
+/MediaBox [ 0 0 612 792 ]
+/Parent 2 0 R
+/Resources <<
+/Font 6 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
 >>
 endobj
 14 0 obj
 <<
-/Count 3 /Kids [ 5 0 R 8 0 R 11 0 R ] /Type /Pages
+/A <<
+/S /URI
+/Type /Action
+/URI (https\072\057\057docs\056pytorch\056org\057docs\0572\05614\057generated\057torch\056nn\056Module\056html)
+>>
+/Border [ 0 0 0 ]
+/Rect [ 102.1865 95.9 218.39 106.1 ]
+/Subtype /Link
+/Type /Annot
 >>
 endobj
 15 0 obj
 <<
-/Filter [ /ASCII85Decode /FlateDecode ] /Length 1949
+/A <<
+/S /URI
+/Type /Action
+/URI (https\072\057\057docs\056pytorch\056org\057vision\057stable\057generated\057torchvision\056datasets\056CIFAR10\056html)
 >>
-stream
-Gau0D9lo&I&A@sBlm4G[7\]Z,9$-/PAE#E`-Zs75^%_YkOGJQ8=9,_0r;&$2;RSFuSAMDgL`R,][s3g:lpCb:rX6q_<WTj;_XoC0+GAhpK%PuiGn(p^-\%c\Ds$o8_OL5Y^A4YYkgr+=.nLL_P(XDBYcM4H]S,Bj=ME54^S.A"Zl%4fUZ0p9ApfF-pSVXIi&!h2NAI>..G:T$BWWD)%I\Rj_ol(8?BZ#9dT2`jg2c^N5!V<ISh3iYd@ic)NGoS?EUA=31MliXiFD?i7N\&pX^/UE"#)3hC?4^FFMh)*Y.T]pdp#<,c)T$G2GL*TOcp6V$(I$in%hs08uEQQl0\+\31ON%D07oL#Ibd&/b7>@[NP2d'1W_<;;f:fY?uj:XC-otWYO$@'W#KcJeZEjTK@`0dRME36A8&_@EluYD^?eOOU]RfRaM%a%j#!BQ5g,p.P@Y&<fmhTLkMiPF\PL8CF5hqKB0g`$C;jlFd&I@q\YB)5oL(BgqkU#+!+\O+UKZV/c`)B12a1L6Elt'h\*DXB-SQpP(<aS&a:AsHm1/MSt79j+OcMsob%fMeup.af(!9Q$MR+L+JfY5Up7p^+FB.?[$<m@Om@(oUZ1JU_StLP[XW3qdjd'$*efEFp_aVZ7$*9U.ZS-lZ4i!g`]r#;^7?35bP1^uSJXlo^5\++FsL9nb:p[P7:RkUA&*k!K&uWA0SY>C3NG)WKBnkI`gkF24+<;KB8AO=gPGI'"mr8=97$TX)u)a;0/tUBJ)R!/n0tdc+UqLMBKkcf3<Ihkf\A?PL](dB=6R01SC)\pT'"67+Wes=)f_i]Z9MiK3?fB-bT7.(<iR/,gIOqAPP_F,9$u\dOljR7pj=&4m(:9j[#L$c/UPfH9o6A$c-^7,jh?6CndXf"A0o8.%*`"5EAWTfO!BQsXOk`\;,7^KY1\*#7_?M?G$`tkNdZiM'\m_LaV?8l6q!T`LC8+>Rto*F>!-sLJ&_NGHZPMq:Jac'],j#\]lRc]kjImPY"nK6^%V>)^)?qD8@KZ7P3$Z\WCT,pAP+-]IUJe-NBM$B>!g>.m@c5m!o=;;jbI"GhX&PX:XgD4XX\?!$rp!MPZmVH]%k-1TXBn)V\c!!Q85grVd^R\=(K9BVAM`p)P'l&8[UN'>30LoXO_Qm-l'F-B@SZ_ii/Yp<%`nR(I+I]?;=>)-p^spB=AU*$BR$4S=aM1/MnjSf_9gPlSZj&b4l![:kW%&["q+fO9*<tS=03MBr'%J)nI1=bBph3n$Z-?O;(%oLO7/PllIhDn.ioUhhNarM#g!beCKMBSVGX8m\+.pc$hJhh1@3c=%Q%![l!j;Zn1\#g&n+sAO"S1[G]T^ZN./-Di`.HC+^uhd*oEs'i7b*Rhnu]-P8B"oS.Jup_[Vu(6kK!m:A*ASqF8,8;RtjQ"X!e"[pXTdl*X4"427*d(pN'Yb)oE*NJmtR;(6c(+p6seV#NtL):il:30>32+As48XKeI5`+UX]GF!#LuEZ.++)-^AXc"0%iO&g0g4.qI*F<ta_Yc/6QkF!"muFG=I^4d&d+N1,rGuL,X<<?'b[hg:,.;KI(?cPP4AOrKaDnHPp(O-dC-@@#@@=$2[OP2pmuJji7P>`Tg[V;KVIBBrN0nZj#[)U/`B^%BO/ET^,og-aa`3_rHVI*8=$Z8A36j`N\E7oF84bpkcgAa!<//Ic4I>#$g',#H8HQg=?<=-IC:tRcCL)(9W!m@$16#X4Q#8j$Rrb?7pY1-k4?V-f<LVi*L`SLs-Lu,Y_]lBF#]cf6QnKgVKJUqmf*D_Cma-6/@XHoH$AbO^o(XNndoT&:3bHW??;]='_Q9srK'4[aUMi5SlY!2=AHKNg>*S2Q3efXHf\Q-@6,Z^E@fssDRsB9?HGmu(Ct'Q`[>W\P[mIlPqMGa(B/W>;S(.%TI4t$UI1p('<u$!4GY"7"]nqMeo*PD#JP'PD?~>endstream
+/Border [ 0 0 0 ]
+/Rect [ 223.116 95.9 303.883 106.1 ]
+/Subtype /Link
+/Type /Annot
+>>
 endobj
 16 0 obj
 <<
-/Filter [ /ASCII85Decode /FlateDecode ] /Length 1834
+/Length 4668
 >>
 stream
-Gatm:@;jmY&H1HmE<n6@*GelaXOtfP?tn>:!EM$m?!n`U">k80fufOK;Mj4<s*]rmCr^DZG/Fk6;8gr>na>8GQV`X5,lEs$U)+L.>pYa-BelGo&.N=D)nh\&qt!s;1@b\1kcB1SLG-p-+"+1o//q)^eu(@%ac]ErcY;s4-9lhJhr/6a2P=K.KW'.iPae&gB]qVOY51[;8jc2on7`fg`Q^7HS^Yb[IUYZ)=%0Z+Z?CTR^'Jt,2F-Ot64V;8IM3A`LndZ^Oq;cA@++s<2fITK(pX_(WnEhCk>eLg,9\@7c6=j?Oc@FB-aaY0%Z)*I[F$t1n0MATm'KPl/@e-VS@PIuD:1YVZ8?gn58?UQNcf,DR;sdSW_cHqNQ>bO.qP:"F6[nH2eUB)\G"Yu0;k?'rc"&LE\In\Ct[Tb*aJ'K$G7Rn@/6e4Q*R3m/F%0n9b-.9Rd][q?FJ>rs#[M](fsd'q&$Z*:6h8ANP"6>jin%?fnSO6;:Hdl/BaRJ6+I0DNQ;i<8^7V;aet^\/#EJj4ke^X)J-qoC4*7r=/K5s2ic-\Bi1BB$^?Y1-I<8^L1d>c$KjC`&Om`YX5PCG8g>DhJJ4XU!md-!@nY(rm7rYfE^:>'=S;T:c*\YXITL9D@uF5!]Wo&]h,]YOiETs?HTcUXeC-sSbMGht4eL;G;%JFF>M1V56`BFuD%a[2lU0h,Us[a9Dn8-7<KU534_``MkY$7Z*iYVTFXt7P(rc8Ac:;joj4DaT%PpS?qS%Y!mru5/X,7b`5"`j5LuVpugW09LoS63!<^9W?FR"d>g?iP)6iOMSmf6a\TC[Kl"1)7:F>P^f65Ri!F^!jQ%LDQ;5hOf(>-Y.LDbCfA/-E#uPd.ACXl2K["`Vnt`\_FJL]tS<-'/4FJIOkg5Vm0^$L"kloJgiOahUs:EZJOfJ1p.EOG@ATr;e&ZTsV<$I%X-A$(^riJK,^SfH/"<(6;>Zs+n>rZ=6rO*9&a]0l+R<=dH#CG@>MG*+N:P$VVajH3f_?2?e7'B_q]"FDU2k%u/mj3glt!J,Y.'iC^O+eP)>U^2pg:*PRK-9$^9CO8'h:*oBi8.f"8AE&oI_/+edi;Ec:A<7IW-Ge-&ogE\&A;oA>:Rj5[rI^I\j\6Ym0#QObqW-ftdWcopW3N'7Uomu"b3'*2=Sa7GbHDWeGr%Z8Q9uk.[4AO>#5DVg^Xm+_ul^h]5aIOPu:I[j>6/-@n0?`$B8L4_T]Y:t%f1f`Fc#<>fgnBKlM9\(ZF1]lj%Be4IneQ4o$&>hlYrgaCbtTmR^ab_qe-_gAI64rAh]CFmfgcT;MW",r#];Zr?j495Yb2)[Q)t.>c0D$*#<qeO\6r0Af8!>)_G.]Vq/nI'BjTcHjZNi$C1Pq6;)QEnCc_H@kBQ*?q^3Xb_o#)6DQ&OECT)P(Tf+CGn4.H*Kp0Z]WANA>[5KRV013fJg]iha;^'@)pN6kjIR\8*M^BDnJLeMP"O5Xm;/l![lPC@3pqZ(fpLmM%UVXEQooMXla+/A?90[)!bo[D%d8&R,l$`j6"-B\Saf`%ig'@M&k+15DJX6Jhg+=HB6=+kt2Gpl:/Q\cR=@t>%KS5Nskag%Y5\FF"0IC5Ts3ahoY99#dM5lH!n90fs=9DoJ-T:Ig.ZG\!gP>=V8,\IJ8'H:fRK&D!$ocJ#n_\02]R8(7Wcm%8:mI7Q-[HA16T.5<gG$-u7!=[*!>T@`n6?Rf[*ckFr\\e:K:Gsq_h/aF?>l0i-MIqT'Cjk@8^9+h(CkplW5),o+'r8qkfqBL%V@f$EVM1]UE3#?pHfV>:0:!t/4+YN=SVA:UlcJ#Nf^+@1GqqBdKT:0+1\d'-i~>endstream
+1 0 0 1 0 0 cm
+BT
+/F1 12 Tf
+14.4 TL
+ET
+q
+BT
+/F1 8 Tf
+9.6 TL
+ET
+0 0 0 rg
+BT
+1 0 0 1 559.552 30 Tm
+(3) Tj
+T*
+ET
+Q
+q
+1 0 0 1 54 728 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3.7 Tm
+/F2 12.3 Tf
+16 TL
+(4\056 Theory\072 arithmetic of CNNs) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 664.6 cm
+q
+BT
+1 0 0 1 0 46.2 Tm
+14.1 TL
+/F1 10.2 Tf
+0 0 0 rg
+(For a convolution with dilation 1\054 the output size along one spatial dimension is\072) Tj
+T*
+/F2 10.2 Tf
+(O \075 floor\050\050N \053 2P \055 K\051 \057 S\051 \053 1) Tj
+/F1 10.2 Tf
+T*
+-0.1174 Tw
+(Here N is the input size\054 P is padding on each side\054 K is kernel size\054 and S is stride\056 The same formula applies to) Tj
+T*
+0 Tw
+(ordinary max pooling with its default floor behavior\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 639.6 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3.7 Tm
+/F2 12.3 Tf
+16 TL
+(Question 1) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 590.3 cm
+q
+BT
+1 0 0 1 0 32.1 Tm
+14.1 TL
+/F1 10.2 Tf
+0 0 0 rg
+(Input\072 32 x 32 x 3\073 eight 5 x 5 filters\073 stride 1\073 no padding\056) Tj
+T*
+(O \075 floor\050\05032 \053 0 \055 5\051 \057 1\051 \053 1 \075 28\056) Tj
+T*
+(Each filter produces one output channel\054 so the output is ) Tj
+/F2 10.2 Tf
+(28 x 28 x 8) Tj
+/F1 10.2 Tf
+(\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 565.3 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3.7 Tm
+/F2 12.3 Tf
+16 TL
+(Question 2) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 516 cm
+q
+BT
+1 0 0 1 0 32.1 Tm
+14.1 TL
+/F1 10.2 Tf
+0 0 0 rg
+(With same padding and stride 1\054 P \075 \0505 \055 1\051 \057 2 \075 2 on each side\056) Tj
+T*
+(O \075 floor\050\05032 \053 2\0502\051 \055 5\051 \057 1\051 \053 1 \075 32\056) Tj
+T*
+(The output becomes ) Tj
+/F2 10.2 Tf
+(32 x 32 x 8) Tj
+/F1 10.2 Tf
+(\073 the number of filters is unchanged\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 491 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3.7 Tm
+/F2 12.3 Tf
+16 TL
+(Question 3) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 441.7 cm
+q
+BT
+1 0 0 1 0 32.1 Tm
+14.1 TL
+/F1 10.2 Tf
+0 0 0 rg
+(Input\072 64 x 64\073 a 3 x 3 filter\073 stride 2\073 no padding\056) Tj
+T*
+(O \075 floor\050\05064 \055 3\051 \057 2\051 \053 1 \075 floor\05030\0565\051 \053 1 \075 31\056) Tj
+T*
+(The output spatial size is ) Tj
+/F2 10.2 Tf
+(31 x 31) Tj
+/F1 10.2 Tf
+(\056 The last incomplete window is not used\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 416.7 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3.7 Tm
+/F2 12.3 Tf
+16 TL
+(Question 4) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 367.4 cm
+q
+BT
+1 0 0 1 0 32.1 Tm
+14.1 TL
+/F1 10.2 Tf
+0 0 0 rg
+(Input\072 16 x 16\073 max\055pooling kernel 2 x 2\073 stride 2\073 no padding\056) Tj
+T*
+(O \075 floor\050\05016 \055 2\051 \057 2\051 \053 1 \075 8\056) Tj
+T*
+(The output is ) Tj
+/F2 10.2 Tf
+(8 x 8) Tj
+/F1 10.2 Tf
+( for each feature map\056 Pooling preserves the channel count\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 342.4 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3.7 Tm
+/F2 12.3 Tf
+16 TL
+(Question 5) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 264.9 cm
+q
+BT
+1 0 0 1 0 60.3 Tm
+14.1 TL
+/F1 10.2 Tf
+0 0 0 rg
+(A 3 x 3 convolution with same padding and stride 1 uses P \075 1\056) Tj
+T*
+(First layer\072 floor\050\050128 \053 2 \055 3\051 \057 1\051 \053 1 \075 128\056) Tj
+T*
+(Second layer\072 floor\050\050128 \053 2 \055 3\051 \057 1\051 \053 1 \075 128\056) Tj
+T*
+(The final spatial shape is ) Tj
+/F2 10.2 Tf
+(128 x 128) Tj
+/F1 10.2 Tf
+(\056 The output channel count equals the second layer\047s filter count\054 which the) Tj
+T*
+(question does not specify\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 239.9 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 3.7 Tm
+/F2 12.3 Tf
+16 TL
+(Question 6) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 162.4 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 60.3 Tm
+/F1 10.2 Tf
+14.1 TL
+(model\056train\050\051 sets the model and its submodules to training mode\056 It does not perform optimization or enable) Tj
+T*
+(gradients by itself\056 A newly created PyTorch model starts in training mode\054 so removing the call may have no) Tj
+T*
+(effect if model\056eval\050\051 has never been called\056 After validation\054 however\054 removing it leaves the model in) Tj
+T*
+(evaluation mode\072 Dropout stays disabled and BatchNorm uses its stored statistics instead of updating them\056) Tj
+T*
+(Backpropagation and optimizer steps can still run\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 113.1 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 32.1 Tm
+/F1 10.2 Tf
+14.1 TL
+(This assignment\047s CNN contains only convolution\054 ReLU\054 pooling\054 flattening\054 and linear layers\056 These layers) Tj
+T*
+-0.08685 Tw
+(behave the same in training and evaluation modes\054 so omitting model\056train\050\051 alone does not change this model\047s) Tj
+T*
+0 Tw
+(forward computation\056 The explicit call is still useful when resuming training after evaluation\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 54 94.6 cm
+q
+BT
+1 0 0 1 0 3 Tm
+11.5 TL
+/F1 8.5 Tf
+0 0 0 rg
+(References\072 ) Tj
+(PyTorch nn\056Module \050train\057eval\051) Tj
+(\073 ) Tj
+(Torchvision CIFAR10) Tj
+(\056) Tj
+T*
+ET
+Q
+Q
+
+endstream
 endobj
 17 0 obj
 <<
-/Filter [ /ASCII85Decode /FlateDecode ] /Length 1827
+/Author (Jiajun Shen)
+/CreationDate (D\07220261012192526\05504\04700\047)
+/Creator (\050unspecified\051)
+/Keywords ()
+/ModDate (D\07220261012192526\05504\04700\047)
+/Producer (ReportLab PDF Library \055 \050opensource\051)
+/Subject (\050unspecified\051)
+/Title (Assignment 2\072 Convolutional Neural Networks)
+/Trapped /False
 >>
-stream
-GatU3968iI%)2I;i)XFT.$eC(G!%p`h.F+E2Oh/3fh3rV7)dqRUe4O.gg@er.J_@N8t1cP1mSCK+MJ?s7PMbfjITKXn7E.X(D0%ibR94ri<\QfiSFFNpD<5>KGLHD\G\U547t0W8$/pNSVChs6Sa=?"[R/3oD`4t#Dmq"72rKDSAl5LMVeoC)+"t-P(o0Y(``qskE7V@N'`mb\C0\!?s;2O`N@3H(%Cqfdd5Zaal7P-6Jn?Y4]A+q(m?O6E^U[J&;Hkd6g#El(J4d^9Za+\)_7/+'cMj4Pg$g0"0`.CWj-\V_2'0Q=K1@5.*9<T.)\`BY.-;60$KaTQ(2uPC^gSu_eUYmV=\nL*F-H3Lp,_R5$T2G$%0_T.u<!#>q\dknM#or;oEJU_-^Gg\3q:],p>@2#&m!QCR4/#Gm9dM$XChoklWMcj')#Z'kT4VYOp@IN?U"C?s(CA:qCC6#-=t#_9n5,!^Cc:.#eFu?:2^"TN8'<F"Ue9)T[3?RaV%B_@9kVV,05>`@dR%f_mF04u_8AK_c+Qdin.j:Q?\I;ERF/pCuUC'Sa6n0`s%G(D]nr8YH]ljk@r484#-8WB)$9%2&<M7n'UXs"U;Zr5aMO'(KLFb<&&;l\AZE]ZC]qi`s[FCr%A`3WPpu$&Y[i1tpn0VW8c-a5e;^JmNiQES?-8anWff#,4JaqePEn9>knam?g\nm\$5KGR`7jMNNp(Ugo;P??Ys-'OM)"m^nMnHFM]hho>YMB<'sH!8%qJ!!"g1T5:MHKGs/^9.GP!OTb8-c[.qr9qu>fPk:st7B#15.5W+)iQ%]2f%Pddd@PBB3Us:`%OsJn`+->DUKpTK@CelU3fHm:Y?`#1QmtZqhVBj(JZk4_1RMYbENVrP3S$B^WthUsb!KSZ6Rj!uTmSUrUHSe%p_<W&1U09)GPIP&Ps=]:I+prC_t!2hL?ad>?G!.1%KgeaP6VF2FXs*,"_Y9[el]1<KWE\_>'%USP5AkEQ:l&dNO6A9-)7sXiKGugq[CD&Y=oI71o=%@-q<B:rnNuF*\;t49B1ogDH:!JNDqO`Rd7:#XKY?*jkHTa[cg/,h<?GU3]-BVm=]_8P=2t+a9AUd8BJqq/pojIPkuKK6O`m>_b-!'fl?_^l'eUc)o-23O?k;G5o+k::s9[KH#7;fM.5:6Ri!N@kqd$0mP>E6+5peOTA9cq>RDsGo.m\A$&Lnf@8*a5Na$IMTb5R,2u''qh<YAASEN@-+hY;=OOROaYR%8;U(T]gXA&F<fhK#:jfN.*i"@p)XN:GqM\+0"nl<5T9OlrM*3Rk6V%Ek!MQojM]TE$Qh4UNgV3^bmV)0\q9_gR(S;I2c1TCYl.!UKSV!o9i^1='%oR`e.I*$(^jjGTnJdplHnH">3m`mP;Kj'Vk?u&SHY&Mrl'CVo^>EcS/nNihU1\anL>#E>FClOX`0GKi.`VBtLg#A0Hk7Z6th($Yu@o3D-+f"':b?7U35Z<kNrm92MK>ALmID`n*B"-VLWG^,!e)9ZJi!C_/',W+QaBn^4;%iRu&T%b5aKG=?1RAt(DC&VB/1)6@g8IDB7$,Dh6@2q@#4R=rr+FC4+9kq5R'g21s)\bKb*hr@CL!#AhS+,f^jFIJ17k<0?K1Akga>1K_-QVn^7X=<N_HGceop]>bmh8AnL`;i#_pLlN)'$,`X.,F_F.K\SHDRiNHJi\@H)KUNQR>DNiMNa79C]!78m[W5n7@fC+9JV`a?d+XiJ,Z9b1TZI34<_[-JqMqRbKO^@21WP7fM`B>3F2>o$$MIW?_7B4pDWM9DM90/[OASa97a47Cqu([#/"TjRTJ?$Pm(='LPm~>endstream
 endobj
 xref
 0 18
 0000000000 65535 f 
-0000000061 00000 n 
-0000000112 00000 n 
-0000000219 00000 n 
-0000000331 00000 n 
-0000000555 00000 n 
-0000000768 00000 n 
-0000000873 00000 n 
-0000001045 00000 n 
-0000001258 00000 n 
-0000001466 00000 n 
-0000001692 00000 n 
-0000001913 00000 n 
-0000001983 00000 n 
-0000002292 00000 n 
-0000002365 00000 n 
-0000004406 00000 n 
-0000006332 00000 n 
+0000000015 00000 n 
+0000000083 00000 n 
+0000000156 00000 n 
+0000000363 00000 n 
+0000000614 00000 n 
+0000007384 00000 n 
+0000007435 00000 n 
+0000007542 00000 n 
+0000007654 00000 n 
+0000007759 00000 n 
+0000007969 00000 n 
+0000008166 00000 n 
+0000012239 00000 n 
+0000012456 00000 n 
+0000012704 00000 n 
+0000012966 00000 n 
+0000017687 00000 n 
 trailer
 <<
-/ID 
-[<19057205ce4184d68c517acfaa30c812><19057205ce4184d68c517acfaa30c812>]
-% ReportLab generated PDF document -- digest (opensource)
-
-/Info 13 0 R
-/Root 12 0 R
 /Size 18
+/Root 1 0 R
+/Info 17 0 R
+/ID [ <19057205ce4184d68c517acfaa30c812> <19057205ce4184d68c517acfaa30c812> ]
 >>
 startxref
-8251
+18035
 %%EOF
